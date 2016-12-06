@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="K4u-c3-Jel">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="yme-gK-Imo" customClass="LoginViewController" customModule="GithubExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mNF-on-v8w"/>
+                        <viewControllerLayoutGuide type="bottom" id="rgU-Ge-7Be"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="054-im-0B8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2uo-px-tsu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NHp-EW-WvL"/>
+                                    <constraint firstAttribute="width" constant="97" id="NwW-Oa-BSt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pass" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DtN-Ql-wfv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ql9-1F-Amc"/>
+                                    <constraint firstAttribute="width" constant="97" id="ZqI-Q5-VnY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXd-Tm-DKE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XiN-aM-I5D"/>
+                                    <constraint firstAttribute="width" constant="46" id="wK9-AV-YTJ"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneWithSender:" destination="yme-gK-Imo" eventType="touchUpInside" id="lC3-XD-dff"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.85984996921541024" blue="0.75052458896595797" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DtN-Ql-wfv" firstAttribute="top" secondItem="2uo-px-tsu" secondAttribute="bottom" constant="39" id="1ZF-61-SBS"/>
+                            <constraint firstItem="wXd-Tm-DKE" firstAttribute="centerX" secondItem="054-im-0B8" secondAttribute="centerX" id="FZH-iq-jM1"/>
+                            <constraint firstItem="DtN-Ql-wfv" firstAttribute="centerX" secondItem="054-im-0B8" secondAttribute="centerX" id="Hs2-3i-YSo"/>
+                            <constraint firstItem="2uo-px-tsu" firstAttribute="centerX" secondItem="054-im-0B8" secondAttribute="centerX" id="Mjg-aA-cJ7"/>
+                            <constraint firstItem="wXd-Tm-DKE" firstAttribute="top" secondItem="DtN-Ql-wfv" secondAttribute="bottom" constant="42" id="ab4-7q-l8P"/>
+                            <constraint firstItem="2uo-px-tsu" firstAttribute="top" secondItem="mNF-on-v8w" secondAttribute="bottom" constant="104" id="dMJ-ld-8JL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="2uo-px-tsu" id="wS9-fo-N1L"/>
+                        <outlet property="passTextField" destination="DtN-Ql-wfv" id="R4W-Ql-CiJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="op6-D9-408" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-922" y="36"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GithubExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZv-CD-pO6">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="NrP-Rl-ppG"/>
+                                    <constraint firstAttribute="height" constant="30" id="ihs-cS-rLl"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N3K-Jx-nzs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5564382784434273" green="0.94740154948053079" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oZv-CD-pO6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="59z-7c-NhW"/>
+                            <constraint firstItem="oZv-CD-pO6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="zo1-7K-25R"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>
